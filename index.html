@@ -1,97 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Diego Diaz</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2193d055c9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-    <header>
-        <nav id="navbar">
-            <div class="logo">Diego<span>Diaz</span></div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-    <main>
+  <!-- ========== INTRO SCREEN ========== -->
+  <div id="intro">
+    <div class="intro-inner">
+      <div class="intro-line"></div>
+      <div class="intro-word">BIENVENIDO</div>
+      <div class="intro-sub">portfolio &nbsp;·&nbsp; 2025</div>
+      <div class="intro-dots">
+        <div class="intro-dot"></div>
+        <div class="intro-dot"></div>
+        <div class="intro-dot"></div>
+      </div>
+    </div>
+  </div>
 
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Diego Diaz</h1>
-                    <h2>Desarrollador Web Junior</h2>
-                    <p>Desarrollador Web Junior en constante crecimiento, con experiencia creando interfaces funcionales <br> y enfocadas en el usuario. Poseo buenas habilidades de comunicación y resolución de problemas. <br> Trabajo con HTML, CSS, JavaScript, Python y MySQL, manteniendo siempre una actitud positiva y orientada al aprendizaje..</p>
+  <!-- ========== MAIN CONTENT ========== -->
+  <div id="main">
 
-                    <div class="social-links">
-                        <a href="https://github.com/Twidied" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/diego-d%C3%ADaz-a6710137a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/twidied_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">MI.PORT</div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#social">Redes</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
 
-                <div class="hero-image">
-                    <img src="cat.jpg" alt="Foto">
-                </div>
-            </div>
-        </section>
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grain"></div>
 
-        <section id="experiencia">
-            <h2 class="section-title">Experiencia</h2>
-            <div class="timeline">
+      <!-- PARTE SUPERIOR: nombre y tag -->
+      <div class="hero-top">
+        <div class="hero-tag">Disponible para proyectos</div>
+        <h1 class="hero-name">
+          Diego<br/>
+          <span>Diaz</span>
+        </h1>
+      </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="date">2025 - Actualidad</span>
-                        <h3>Desarrollador Frontend</h3>
-                        <h4>CampusLands</h4>
-                        <p>Trabajando en proyectos web aplicando nuevas tecnologías.</p>
-                        <ul class="skills">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <h2 class="section-title">Proyectos Personales</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>ELVEN STORE</h3>
-                        <p>Una web que simula una tienda de moda, con secciones de productos, carrito interactivo y guardado de datos en el navegador.</p>
-                        <div class="project-tech">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="" target="_blank"><i class="fab fa-github"></i> Repositorio</a>
-                        </div>
-                    </div>
-                </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Diego Diaz</p>
-            <div class="social-links">
-                <a href="https://github.com/Twidied"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/diego-d%C3%ADaz-a6710137a/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/twidied_/"><i class="fab fa-instagram"></i></a>
-            </div>
+      <!-- TICKER INFINITO EN EL CENTRO -->
+      <div class="ticker-wrap">
+        <div class="ticker-border ticker-border-top"></div>
+        <div class="ticker-track">
+          <div class="ticker-inner" id="tickerInner">
+            <span>MI PORTAFOLIO</span>
+            <span class="ticker-dot">✦</span>
+            <span>DISEÑO &amp; CÓDIGO</span>
+            <span class="ticker-dot">✦</span>
+            <span>MI PORTAFOLIO</span>
+            <span class="ticker-dot">✦</span>
+            <span>DISEÑO &amp; CÓDIGO</span>
+            <span class="ticker-dot">✦</span>
+            <span>MI PORTAFOLIO</span>
+            <span class="ticker-dot">✦</span>
+            <span>DISEÑO &amp; CÓDIGO</span>
+            <span class="ticker-dot">✦</span>
+          </div>
         </div>
+        <div class="ticker-border ticker-border-bottom"></div>
+      </div>
+
+      <!-- PARTE INFERIOR: descripción y CTA -->
+      <div class="hero-bottom">
+        <div class="hero-bottom-inner">
+          <p class="hero-desc">
+            Diseñador/Desarrollador creativo con pasión por construir
+            experiencias digitales que dejan huella. Donde el código
+            se encuentra con el arte.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Proyectos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">?
+              </div>
+              <div class="stat-label">Años exp.</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Ideas</div>
+            </div>
+          </div>
+          <a href="#projects" class="hero-cta">Ver mi trabajo →</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- == ABOUT == -->
+    <section id="about">
+      <div class="section-header reveal">
+        <div class="section-num">01</div>
+        <div class="section-title-group">
+          <div class="section-eyebrow">Quién soy</div>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal reveal-delay-1">
+          <div class="about-img-placeholder"></div>
+          <div class="about-frame"></div>
+          <div class="about-accent"></div>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <p class="about-intro">
+            Hola, soy <em>Diego</em> — un creativo que vive
+            en el espacio entre el diseño y la tecnología.
+          </p>
+          <p class="about-body">
+            Me apasiona construir interfaces que no solo funcionen
+            perfectamente sino que también cuenten una historia. Creo
+            que el mejor diseño es aquel que no notas, pero que nunca olvidas.
+          </p>
+          <p class="about-body">
+            Cuando no estoy frente al computador, me encuentras explorando
+            tendencias de moda, escuchando música o buscando la próxima
+            fuente tipográfica perfecta.
+          </p>
+          <div class="skills-grid reveal reveal-delay-3">
+            <div class="skill-tag">HTML / CSS</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">Canva</div>
+            <div class="skill-tag">MySQL</div>
+            <div class="skill-tag">Git</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <div class="section-num">02</div>
+        <div class="section-title-group">
+          <div class="section-eyebrow">Lo que he creado</div>
+          <h2 class="section-title">Proyectos</h2>
+        </div>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-num">001</div>
+          <div class="project-cat">Web Design</div>
+          <h3 class="project-name">Nombre del Proyecto</h3>
+          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">API</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-num">002</div>
+          <div class="project-cat">UI / UX</div>
+          <h3 class="project-name">Nombre del Proyecto</h3>
+          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
+          <div class="project-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Branding</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-num">003</div>
+          <div class="project-cat">Full Stack</div>
+          <h3 class="project-name">Nombre del Proyecto</h3>
+          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
+          <div class="project-tags">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+    </section>
+
+    <!-- ========== SOCIAL ========== -->
+    <section id="social">
+      <div class="section-header reveal" style="justify-content:center; text-align:center; flex-direction:column; gap:0.5rem;">
+        <div class="section-num" style="font-size:3rem; color:rgba(200,105,122,0.15);">03</div>
+        <div class="section-title-group">
+          <div class="section-eyebrow">Encuéntrame en</div>
+          <h2 class="section-title">Redes Sociales</h2>
+        </div>
+      </div>
+      <div class="social-grid">
+        <a href="#" class="social-card reveal reveal-delay-1">
+          <div class="social-icon">𝕏</div>
+          <div class="social-name">Twitter / X</div>
+          <div class="social-handle">@tu_usuario</div>
+        </a>
+        <a href="#" class="social-card reveal reveal-delay-2">
+          <div class="social-icon">◈</div>
+          <div class="social-name">Instagram</div>
+          <div class="social-handle">@tu_usuario</div>
+        </a>
+        <a href="#" class="social-card reveal reveal-delay-3">
+          <div class="social-icon">in</div>
+          <div class="social-name">LinkedIn</div>
+          <div class="social-handle">Tu Nombre</div>
+        </a>
+        <a href="#" class="social-card reveal reveal-delay-4">
+          <div class="social-icon">⌥</div>
+          <div class="social-name">GitHub</div>
+          <div class="social-handle">@tu_usuario</div>
+        </a>
+        <a href="#" class="social-card reveal reveal-delay-5">
+          <div class="social-icon">▲</div>
+          <div class="social-name">Behance</div>
+          <div class="social-handle">Tu Nombre</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="section-header reveal">
+        <div class="section-num">04</div>
+        <div class="section-title-group">
+          <div class="section-eyebrow">Hablemos</div>
+          <h2 class="section-title">Contacto</h2>
+        </div>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-inner">
+
+        <div class="contact-left reveal">
+          <h3 class="contact-headline">
+            ¿Tienes un proyecto en mente?<br/>
+            <em>Hagámoslo realidad.</em>
+          </h3>
+          <p class="contact-body">
+            Estoy siempre abierto/a a nuevas colaboraciones, proyectos
+            creativos y oportunidades interesantes. No dudes en escribirme,
+            respondo siempre.
+          </p>
+          <a href="/cdn-cgi/l/email-protection#6d191808000c04012d0e021f1f0802430e0200" class="contact-email-link">
+            ✉ <span class="__cf_email__" data-cfemail="aadedfcfc7cbc3c6eac9c5d8d8cfc584c9c5c7">[email&#160;protected]</span>
+          </a>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre completo"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@correo.com"/>
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea placeholder="Cuéntame sobre tu proyecto..."></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">Enviar mensaje →</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">MI.PORT</div>
+      <div class="footer-copy">© 2025 Diego Diaz. Todos los derechos reservados.</div>
+      <div class="footer-made">Hecho con amor & código</div>
     </footer>
 
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
