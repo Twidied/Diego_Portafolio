@@ -6,295 +6,283 @@
   <title>Mi Portafolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
-  <!-- ========== INTRO SCREEN ========== -->
   <div id="intro">
-    <div class="intro-inner">
-      <div class="intro-line"></div>
-      <div class="intro-word">BIENVENIDO</div>
-      <div class="intro-sub">portfolio &nbsp;·&nbsp; 2025</div>
-      <div class="intro-dots">
-        <div class="intro-dot"></div>
-        <div class="intro-dot"></div>
-        <div class="intro-dot"></div>
+    <div class="entrada-inner">
+      <div class="entrada-linea"></div>
+      <div class="entrada-titulo">BIENVENIDO</div>
+      <div class="entrada-sub">portfolio &nbsp;·&nbsp; 2025</div>
+      <div class="entrada-puntos">
+        <div class="punto"></div>
+        <div class="punto"></div>
+        <div class="punto"></div>
       </div>
     </div>
   </div>
 
-  <!-- ========== MAIN CONTENT ========== -->
   <div id="main">
-
-    <!-- NAV -->
     <nav>
-      <div class="nav-logo">MI.PORT</div>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#social">Redes</a></li>
-        <li><a href="#contact">Contacto</a></li>
+      <div class="logo">MI.PORT</div>
+      <ul class="menu-links">
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#trabajos">Proyectos</a></li>
+        <li><a href="#redes">Redes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
 
-    <!-- ========== HERO ========== -->
-    <section id="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-grain"></div>
+    <section id="inicio">
+      <div class="inicio-fondo"></div>
+      <div class="inicio-grano"></div>
 
-      <!-- PARTE SUPERIOR: nombre y tag -->
-      <div class="hero-top">
-        <div class="hero-tag">Disponible para proyectos</div>
-        <h1 class="hero-name">
+      <div class="inicio-nombre">
+        <div class="inicio-badge">Disponible para proyectos</div>
+        <h1 class="nombre-grande">
           Diego<br/>
           <span>Diaz</span>
         </h1>
       </div>
 
-      <!-- TICKER INFINITO EN EL CENTRO -->
-      <div class="ticker-wrap">
-        <div class="ticker-border ticker-border-top"></div>
-        <div class="ticker-track">
-          <div class="ticker-inner" id="tickerInner">
+      <div class="banda-wrap">
+        <div class="banda-borde banda-borde-arriba"></div>
+        <div class="banda-pista">
+          <div class="banda-texto" id="bandaTexto">
             <span>MI PORTAFOLIO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
             <span>DISEÑO &amp; CÓDIGO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
             <span>MI PORTAFOLIO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
             <span>DISEÑO &amp; CÓDIGO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
             <span>MI PORTAFOLIO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
             <span>DISEÑO &amp; CÓDIGO</span>
-            <span class="ticker-dot">✦</span>
+            <span class="banda-estrella">✦</span>
           </div>
         </div>
-        <div class="ticker-border ticker-border-bottom"></div>
+        <div class="banda-borde banda-borde-abajo"></div>
       </div>
 
-      <!-- PARTE INFERIOR: descripción y CTA -->
-      <div class="hero-bottom">
-        <div class="hero-bottom-inner">
-          <p class="hero-desc">
+      <div class="inicio-info">
+        <div class="inicio-info-inner">
+          <p class="inicio-desc">
             Diseñador/Desarrollador creativo con pasión por construir
             experiencias digitales que dejan huella. Donde el código
             se encuentra con el arte.
           </p>
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-num">4+</div>
-              <div class="stat-label">Proyectos</div>
+          <div class="numeros">
+            <div class="numero-item">
+              <div class="numero-grande">4+</div>
+              <div class="numero-label">Proyectos</div>
             </div>
-            <div class="stat">
-              <div class="stat-num">?
-              </div>
-              <div class="stat-label">Años exp.</div>
+            <div class="numero-item">
+              <div class="numero-grande">?</div>
+              <div class="numero-label">Años exp.</div>
             </div>
-            <div class="stat">
-              <div class="stat-num">∞</div>
-              <div class="stat-label">Ideas</div>
+            <div class="numero-item">
+              <div class="numero-grande">∞</div>
+              <div class="numero-label">Ideas</div>
             </div>
           </div>
-          <a href="#projects" class="hero-cta">Ver mi trabajo →</a>
+          <a href="#trabajos" class="btn-ver">Ver mi trabajo →</a>
         </div>
       </div>
 
-      <div class="hero-scroll">
-        <span class="scroll-text">Scroll</span>
-        <div class="scroll-line"></div>
+      <div class="scroll-indicador">
+        <span class="scroll-txt">Scroll</span>
+        <div class="scroll-raya"></div>
       </div>
     </section>
 
-    <!-- == ABOUT == -->
-    <section id="about">
-      <div class="section-header reveal">
-        <div class="section-num">01</div>
-        <div class="section-title-group">
-          <div class="section-eyebrow">Quién soy</div>
-          <h2 class="section-title">About Me</h2>
+    <section id="sobre">
+      <div class="seccion-header apare">
+        <div class="seccion-num">01</div>
+        <div class="seccion-titulo-wrap">
+          <div class="seccion-tag">Quién soy</div>
+          <h2 class="seccion-titulo">About Me</h2>
         </div>
-        <div class="section-line"></div>
+        <div class="seccion-linea"></div>
       </div>
-      <div class="about-grid">
-        <div class="about-image-wrap reveal reveal-delay-1">
-          <div class="about-img-placeholder"></div>
-          <div class="about-frame"></div>
-          <div class="about-accent"></div>
+      <div class="sobre-grid">
+        <div class="sobre-foto-wrap apare apare-1">
+          <div class="sobre-foto">
+            <canvas class="foto-canvas" id="fotoCanvas"></canvas>
+            <div class="foto-overlay"></div>
+            <div class="foto-nombre">DIEGO<br/>DIAZ</div>
+          </div>
+          <div class="sobre-marco"></div>
+          <div class="sobre-cuadro"></div>
         </div>
-        <div class="about-text reveal reveal-delay-2">
-          <p class="about-intro">
+        <div class="sobre-texto apare apare-2">
+          <p class="sobre-intro">
             Hola, soy <em>Diego</em> — un creativo que vive
             en el espacio entre el diseño y la tecnología.
           </p>
-          <p class="about-body">
+          <p class="sobre-parrafo">
             Me apasiona construir interfaces que no solo funcionen
             perfectamente sino que también cuenten una historia. Creo
             que el mejor diseño es aquel que no notas, pero que nunca olvidas.
           </p>
-          <p class="about-body">
+          <p class="sobre-parrafo">
             Cuando no estoy frente al computador, me encuentras explorando
             tendencias de moda, escuchando música o buscando la próxima
             fuente tipográfica perfecta.
           </p>
-          <div class="skills-grid reveal reveal-delay-3">
-            <div class="skill-tag">HTML / CSS</div>
-            <div class="skill-tag">JavaScript</div>
-            <div class="skill-tag">Canva</div>
-            <div class="skill-tag">MySQL</div>
-            <div class="skill-tag">Git</div>
+          <div class="habilidades apare apare-3">
+            <div class="habilidad">HTML / CSS</div>
+            <div class="habilidad">JavaScript</div>
+            <div class="habilidad">Canva</div>
+            <div class="habilidad">MySQL</div>
+            <div class="habilidad">Git</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== PROJECTS ========== -->
-    <section id="projects">
-      <div class="section-header reveal">
-        <div class="section-num">02</div>
-        <div class="section-title-group">
-          <div class="section-eyebrow">Lo que he creado</div>
-          <h2 class="section-title">Proyectos</h2>
+    <section id="trabajos">
+      <div class="seccion-header apare">
+        <div class="seccion-num">02</div>
+        <div class="seccion-titulo-wrap">
+          <div class="seccion-tag">Lo que he creado</div>
+          <h2 class="seccion-titulo">Proyectos</h2>
         </div>
-        <div class="section-line"></div>
+        <div class="seccion-linea"></div>
       </div>
-      <div class="projects-grid">
+      <div class="trabajos-grid">
 
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-num">001</div>
-          <div class="project-cat">Web Design</div>
-          <h3 class="project-name">Nombre del Proyecto</h3>
-          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">API</span>
+        <div class="tarjeta apare apare-1">
+          <div class="tarjeta-num">001</div>
+          <div class="tarjeta-cat">Web Design</div>
+          <h3 class="tarjeta-nombre">Nombre del Proyecto</h3>
+          <p class="tarjeta-desc">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</p>
+          <div class="tarjeta-tags">
+            <span class="tag">React</span>
+            <span class="tag">CSS</span>
+            <span class="tag">API</span>
           </div>
-          <div class="project-arrow">↗</div>
+          <div class="tarjeta-flecha">↗</div>
         </div>
 
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-num">002</div>
-          <div class="project-cat">UI / UX</div>
-          <h3 class="project-name">Nombre del Proyecto</h3>
-          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
-          <div class="project-tags">
-            <span class="project-tag">Figma</span>
-            <span class="project-tag">Branding</span>
+        <div class="tarjeta apare apare-2">
+          <div class="tarjeta-num">002</div>
+          <div class="tarjeta-cat">UI / UX</div>
+          <h3 class="tarjeta-nombre">Nombre del Proyecto</h3>
+          <p class="tarjeta-desc">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</p>
+          <div class="tarjeta-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Branding</span>
           </div>
-          <div class="project-arrow">↗</div>
+          <div class="tarjeta-flecha">↗</div>
         </div>
 
-        <div class="project-card reveal reveal-delay-3">
-          <div class="project-num">003</div>
-          <div class="project-cat">Full Stack</div>
-          <h3 class="project-name">Nombre del Proyecto</h3>
-          <p class="project-desc">Descripción breve del proyecto. Qué problema resolviste y cómo lo hiciste de manera única y elegante.</p>
-          <div class="project-tags">
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">MongoDB</span>
+        <div class="tarjeta apare apare-3">
+          <div class="tarjeta-num">003</div>
+          <div class="tarjeta-cat">Full Stack</div>
+          <h3 class="tarjeta-nombre">Nombre del Proyecto</h3>
+          <p class="tarjeta-desc">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</p>
+          <div class="tarjeta-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
           </div>
-          <div class="project-arrow">↗</div>
+          <div class="tarjeta-flecha">↗</div>
         </div>
     </section>
 
-    <!-- ========== SOCIAL ========== -->
-    <section id="social">
-      <div class="section-header reveal" style="justify-content:center; text-align:center; flex-direction:column; gap:0.5rem;">
-        <div class="section-num" style="font-size:3rem; color:rgba(200,105,122,0.15);">03</div>
-        <div class="section-title-group">
-          <div class="section-eyebrow">Encuéntrame en</div>
-          <h2 class="section-title">Redes Sociales</h2>
+    <section id="redes">
+      <div class="seccion-header apare" style="justify-content:center;text-align:center;flex-direction:column;gap:0.5rem;">
+        <div class="seccion-num" style="font-size:3rem;color:rgba(200,105,122,0.15);">03</div>
+        <div class="seccion-titulo-wrap">
+          <div class="seccion-tag">Encuéntrame en</div>
+          <h2 class="seccion-titulo">Redes Sociales</h2>
         </div>
       </div>
-      <div class="social-grid">
-        <a href="#" class="social-card reveal reveal-delay-1">
-          <div class="social-icon">𝕏</div>
-          <div class="social-name">Twitter / X</div>
-          <div class="social-handle">@tu_usuario</div>
+      <div class="redes-grid">
+        <a href="https://www.instagram.com/twidied_?igsh=NmlvMmlzeDY5Z2c5&utm_source=qr" class="red-item apare apare-2">
+          <div class="red-icono"><i data-lucide="instagram"></i></div>
+          <div class="red-nombre">Instagram</div>
+          <div class="red-usuario">@twidied_</div>
         </a>
-        <a href="#" class="social-card reveal reveal-delay-2">
-          <div class="social-icon">◈</div>
-          <div class="social-name">Instagram</div>
-          <div class="social-handle">@tu_usuario</div>
+        <a href="https://www.linkedin.com/in/diego-d%C3%ADaz-a6710137a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="red-item apare apare-3">
+          <div class="red-icono">in</div>
+          <div class="red-nombre">LinkedIn</div>
+          <div class="red-usuario">Diego Diaz</div>
         </a>
-        <a href="#" class="social-card reveal reveal-delay-3">
-          <div class="social-icon">in</div>
-          <div class="social-name">LinkedIn</div>
-          <div class="social-handle">Tu Nombre</div>
-        </a>
-        <a href="#" class="social-card reveal reveal-delay-4">
-          <div class="social-icon">⌥</div>
-          <div class="social-name">GitHub</div>
-          <div class="social-handle">@tu_usuario</div>
-        </a>
-        <a href="#" class="social-card reveal reveal-delay-5">
-          <div class="social-icon">▲</div>
-          <div class="social-name">Behance</div>
-          <div class="social-handle">Tu Nombre</div>
+        <a href="https://github.com/Twidied" class="red-item apare apare-4">
+          <div class="red-icono"><i data-lucide="github"></i></div>
+          <div class="red-nombre">GitHub</div>
+          <div class="red-usuario">@Twidied</div>
         </a>
       </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
-    <section id="contact">
-      <div class="section-header reveal">
-        <div class="section-num">04</div>
-        <div class="section-title-group">
-          <div class="section-eyebrow">Hablemos</div>
-          <h2 class="section-title">Contacto</h2>
+    <section id="contacto">
+      <div class="seccion-header apare">
+        <div class="seccion-num">04</div>
+        <div class="seccion-titulo-wrap">
+          <div class="seccion-tag">Hablemos</div>
+          <h2 class="seccion-titulo">Contacto</h2>
         </div>
-        <div class="section-line"></div>
+        <div class="seccion-linea"></div>
       </div>
-      <div class="contact-inner">
+      <div class="contacto-grid">
 
-        <div class="contact-left reveal">
-          <h3 class="contact-headline">
+        <div class="contacto-izq apare">
+          <h3 class="contacto-titulo">
             ¿Tienes un proyecto en mente?<br/>
-            <em>Hagámoslo realidad.</em>
+            <em>Escríbeme directo.</em>
           </h3>
-          <p class="contact-body">
-            Estoy siempre abierto/a a nuevas colaboraciones, proyectos
-            creativos y oportunidades interesantes. No dudes en escribirme,
-            respondo siempre.
+          <p class="contacto-texto">
+            Estoy abierto a nuevas colaboraciones y proyectos
+            creativos
           </p>
-          <a href="/cdn-cgi/l/email-protection#6d191808000c04012d0e021f1f0802430e0200" class="contact-email-link">
-            ✉ <span class="__cf_email__" data-cfemail="aadedfcfc7cbc3c6eac9c5d8d8cfc584c9c5c7">[email&#160;protected]</span>
+
+          <a href="https://wa.me/573117771163?text=Hola%20Diego!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo%20sobre%20un%20proyecto." target="_blank" class="btn-whatsapp">
+            <svg class="wsp-icono" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Escribir por WhatsApp
+            <span class="wsp-flecha">→</span>
           </a>
+
+          <div class="contacto-deco">
+            <span class="deco-raya"></span>
+            <span class="deco-raya"></span>
+          </div>
         </div>
 
-        <div class="contact-form reveal reveal-delay-2">
-          <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre completo"/>
+        <div class="contacto-der apare apare-2">
+          <div class="info-bloque">
+            <div class="info-label">disponibilidad</div>
+            <div class="info-valor">
+              <span class="punto-verde"></span>Abierto a proyectos
+            </div>
           </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="tu@correo.com"/>
+          <div class="info-bloque">
+            <div class="info-label">tipo de proyectos</div>
+            <div class="info-valor">Diseño web · UI/UX</div>
           </div>
-          <div class="form-group">
-            <label>Mensaje</label>
-            <textarea placeholder="Cuéntame sobre tu proyecto..."></textarea>
+          <div class="info-bloque">
+            <div class="info-label">ubicación</div>
+            <div class="info-valor">Bucaramanga · COP</div>
           </div>
-          <button class="form-submit" onclick="handleSubmit()">Enviar mensaje →</button>
         </div>
 
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-      <div class="footer-logo">MI.PORT</div>
-      <div class="footer-copy">© 2025 Diego Diaz. Todos los derechos reservados.</div>
-      <div class="footer-made">Hecho con amor & código</div>
+      <div class="pie-logo">MI.PORT</div>
+      <div class="pie-copy">© 2025 Diego Diaz. Todos los derechos reservados.</div>
+      <div class="pie-texto">Hecho con amor & código</div>
     </footer>
 
   </div>
 
+  <script>lucide.createIcons();</script>
   <script src="main.js"></script>
 </body>
 </html>
